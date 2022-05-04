@@ -1,6 +1,9 @@
+const rotasUsuarios = require("./controllers/usuarios");
 const express = require("express");
 const app = express();
 const port = 3000;
+
+rotasUsuarios(app);
 
 app.get("/", (req, res) => {
   res.send("Olá Mundo!");
